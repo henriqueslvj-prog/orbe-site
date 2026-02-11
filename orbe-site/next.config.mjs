@@ -4,14 +4,9 @@ const nextConfig = {
     remotePatterns: [{ protocol: "https", hostname: "images.unsplash.com" }]
   },
 
-  // ✅ evita build quebrar por lint
+  // ✅ Não rodar ESLint durante o build na Vercel
   eslint: {
     ignoreDuringBuilds: true
-  },
-
-  // ✅ evita build quebrar por tipagem (depois a gente ajusta certinho)
-  typescript: {
-    ignoreBuildErrors: true
   }
 };
 
